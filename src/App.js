@@ -39,7 +39,7 @@ class App extends Component {
 
     render() {
         const polarityComponent = this.state.polarity !== undefined ?
-            <Polarity sentence={this.state.sentence} polarity={this.state.polarity}/> :
+            <Polarity sentence={this.state.sentence} polarity={this.state.polarity}/> : 
             null;
 
         return (
