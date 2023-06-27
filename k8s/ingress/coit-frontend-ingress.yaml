@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: frontend.35.244.57.140.sslip.io
+  - host: jijo.com.104-198-226-243.sslip.io
     http:
       paths:
       - path: /
