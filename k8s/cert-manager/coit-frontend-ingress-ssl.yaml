@@ -9,16 +9,16 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - frontend.coit.io
-    secretName:  frontend.coit.io
+    - jijo.com.35-225-129-163.sslip.io
+    secretName:  jijo.com.35-225-129-163.sslip.io
   rules:
-  - host: frontend.coit.io
+  - host: jijo.com.35-225-129-163.sslip.io
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: coit-frontend
+            name: coit-frontend-lb
             port:
               number: 80

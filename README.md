@@ -4,10 +4,10 @@
 ## Building the application
 ` $ yarn build `
 
-## Building the container
+## Building the   container
 ` $ docker build -f Dockerfile -t $DOCKER_USER_ID/sentiment-analysis-frontend . `
 
-## Running the container
+## Running the  container
 ` $ docker run -d -p 80:80 $DOCKER_USER_ID/sentiment-analysis-frontend `
 
 ## Pushing the container

@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: coit-backend
+  name: coit-backend1
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     cert-manager.io/issuer: "letsencrypt-prod"
@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - backend.coit.io
-    secretName:  backend.coit.io
+    - api.jijo.com.35-225-129-163.sslip.io
+    secretName:  api.jijo.com.35-225-129-163.sslip.io
   rules:
-  - host: backend.coit.io
+  - host: api.jijo.com.35-225-129-163.sslip.io 
     http:
       paths:
       - path: /

@@ -1,19 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: coit-backend1
+  name: coit-frontend
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-  - host: api.jijo.com.35-225-129-163.sslip.io
+  - host: staging.jijo2.com.35-225-129-163.sslip.io
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: coit-backend1-lb
+            name: coit-frontend-lb
             port:
               number: 80

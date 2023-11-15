@@ -23,7 +23,7 @@ spec:
       volumes:
         - name: datastore
           persistentVolumeClaim:
-            claimName: coit-frontend-fast1
+            claimName: coit-frontend-fast
       containers:
         - image: basilvarghese/myapp-frontend:latest
           imagePullPolicy: IfNotPresent                         # 7
