@@ -24,8 +24,8 @@ spec:
         app.kubernetes.io/name: coit-frontend
     spec:
       containers:
-        - image: jijopjoy80/ordermanagement
-          imagePullPolicy: Always                         # 7
+        - image: jijopjoy80/ordermanagement:latest
+          imagePullPolicy: IfNotPresent                         # 7
           name: coit-frontend
           ports:
             - containerPort: 80
