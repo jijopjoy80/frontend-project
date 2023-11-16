@@ -19,3 +19,7 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+- script: 
+   docker build -t jijopjoy80/order-managemnt:1.0 .
+  displayName: 'docker' 
+
