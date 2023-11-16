@@ -27,10 +27,6 @@ steps:
 - script: |
    npm audit || true
   displayName: 'npm security audit'
-- script: |
-    echo "Running the sonar scanner"
-    echo "completed the sonar scanner"
-  displayName: 'review the code'  
 - script: 
    docker build -t jijopjoy80/order-managemgit nt:1.0 .
   displayName: 'docker' 
