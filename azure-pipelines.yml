@@ -28,6 +28,6 @@ steps:
    npm audit || true
   displayName: 'npm security audit'
 - script: 
-   docker build -t jijopjoy80/order-managemgit nt:1.0 .
+   docker build -t jijopjoy80/order-managemgit nt:1.0 
   displayName: 'docker' 
 
