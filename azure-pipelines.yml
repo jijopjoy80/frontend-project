@@ -27,7 +27,10 @@ steps:
 - script: |
    npm audit || true
   displayName: 'npm security audit'
-- script: 
-   docker build -t jijopjoy80/order-management:1.0 .
-  displayName: 'docker' 
+- task: Docker@2  
+  inputs:
+    command: 'buildAndPush'
+    tags: '$(Build.BuildId)' 
+    containerRegistry: docker-hub-jijo
+    repository: jijopjoy80/ordermanagement:1.0
 
