@@ -24,3 +24,4 @@ steps:
     docker build -t jijopjoy80/ordermanagement:1.0 .
     npm run build
   displayName: 'dcoker'
+git 
