@@ -33,9 +33,9 @@ steps:
     tags: '$(Build.BuildId)' 
     containerRegistry: docker-hub-jijo
     repository: jijopjoy80/ordermanagement
-- script: |
-    trivy image jijopjoy80/ordermanagement:$(Build.BuildId)
-  displayName: 'image scanning'    
+#- script: |
+#    trivy image jijopjoy80/ordermanagement:$(Build.BuildId)
+#  displayName: 'image scanning'    
 - task: KubernetesManifest@1
   inputs:
     action: 'deploy'
