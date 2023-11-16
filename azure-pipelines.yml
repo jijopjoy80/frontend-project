@@ -32,5 +32,5 @@ steps:
     command: 'buildAndPush'
     tags: '$(Build.BuildId)' 
     containerRegistry: docker-hub-jijo
-    repository: jijopjoy80/ordermanagement:1.0
+    repository: jijopjoy80/ordermanagement
 
