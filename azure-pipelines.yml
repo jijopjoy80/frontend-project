@@ -39,5 +39,5 @@ steps:
     connectionType: 'kubernetesServiceConnection'
     kubernetesServiceConnection: 'azure-pipeline-gke-1711'
     namespace: 'default'
-    manifests: 'k8s/simple/pod.yaml'
+    manifests: 'k8s/pod.yaml'
 
