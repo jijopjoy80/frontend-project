@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - jijo.com.35-225-129-163.sslip.io
-    secretName:  jijo.com.35-225-129-163.sslip.io
+    - jijo.com.35.184.202.26.sslip.io
+    secretName:  jijo.com.35.184.202.26.sslip.io
   rules:
-  - host: jijo.com.35-225-129-163.sslip.io
+  - host: jijo.com.35.184.202.26.sslip.io
     http:
       paths:
       - path: /
